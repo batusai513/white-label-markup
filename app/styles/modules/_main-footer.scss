@@ -1,7 +1,10 @@
 .main-footer{
-	background-color: $gray-lighter;
+	background-color: #90999e;
 	padding: em($half-spacing-unit) 0;
-
+  &,
+  & a{
+    color: white;
+  }
 	&__mobile-icons{
 		display: none;
 		@media #{$medium} {
