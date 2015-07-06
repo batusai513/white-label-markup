@@ -43,135 +43,213 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
-      <h1>White label</h1>
-      <p>Your own branded social events app</p>
-      <p>No coding. No hassle</p>
+    <header class="main-header">
+      <h1 class="main-header-logo main-header-logo--positioned">
+        <a href="/" class="main-logo">White label</a>
+      </h1>
+      <p class="brand-text__title brand-text-header__title">Your own branded <br> social events app</p>
+      <p class="brand-text__subtitle brand-text-header__subtitle">No coding. No hassle.</p>
     </header>
+    <div class="main-content">
+      <div class="grid">
+        <div class="grid__item grid__item-content medium--one-half position-relative">
+          <section class="section-slider">
+            <h1 class="brand-text__title brand-text-subheader__title">Your own branded <br> social events app</h1>
+            <p class="brand-text__subtitle brand-text-subheader__subtitle">No coding. No hassle.</p>
 
-    <section>
-      <h1>Your own branded social events app</h1>
-      <p>No coding. No hassle</p>
-      <div class="js-slider">
-        <div>
-          <img src="images/slider-image-1.jpg" alt="">
-        </div>
-        <div>
-          <img src="images/slider-image-2.jpg" alt="">
-        </div>
-        <div>
-          <img src="images/slider-image-3.jpg" alt="">
+            <ul class="nav slider-selector">
+              <li class="nav__item slider-selector__item">
+                <a href="#" class="nav__link slider-selector__link is-active js-slider-selector" data-slider="blendex">
+                  <span class="slider-selector-icon__wrapper">
+                    <span class="slider-selector-icon slider-selector-icon--blendex">blendex</span>
+                  </span>
+                  BlendEx
+                </a>
+              </li>
+              <li class="nav__item slider-selector__item">
+                <a href="#" class="nav__link slider-selector__link js-slider-selector" data-slider="alienware">
+                  <span class="slider-selector-icon__wrapper">
+                    <span class="slider-selector-icon slider-selector-icon--alienware">alienware</span>
+                  </span>
+                  AlienWare
+                </a>
+              </li>
+              <li class="nav__item slider-selector__item">
+                <a href="#" class="nav__link slider-selector__link js-slider-selector" data-slider="amdocs">
+                  <span class="slider-selector-icon__wrapper">
+                    <span class="slider-selector-icon slider-selector-icon--amdocs">amdocs</span>
+                  </span>
+                  amdocs
+                </a>
+              </li>
+            </ul>
+            <div class="slider--skin">
+              <div class="slider--container">
+                <div class="js-slider">
+                  <div>
+                    <img src="images/blendex-screen-1.png" alt="">
+                  </div>
+                  <div>
+                    <img src="images/blendex-screen-2.png" alt="">
+                  </div>
+                  <div>
+                    <img src="images/blendex-screen-3.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div><div class="grid__item grid__item-content medium--one-half">
+          <section class="section-wording">
+            <article class="feature feature--first">
+              <h1 class="beta feature__title">You throw a great event. <br> We give you a great app.</h1>
+              <ul class="feature__list">
+                  <li>Your own iOS and Android mobile apps powered </li>
+                  <li>by AppMyDay’s infrastructure.</li>
+                  <li>Your logo and branding fully integrated.</li>
+                  <li>Unlimited events. Unlimited storage. Limited time offer!</li>
+              </ul>
+            </article>
+            <article class="feature feature--second">
+              <h1 class="beta feature__title">The easiest way to get your events online</h1>
+              <ul class="feature__list">
+                  <li>No expensive development or outsourcing required.</li>
+                  <li>Ongoing maintenance and hosting.</li>
+                  <li>One solution for all your events. </li>
+                  <li>New, exciting features added regularly (and you get them first!).</li>
+                  <li>Leveraging years of experience in engaging guests online.</li>
+                  <li>Business class support. 24/7 phone availability for urgent matters.</li>
+              </ul>
+            </article>
+            <article class="feature feature--third">
+              <h1 class="beta feature__title">Reach guests directly on their mobiles</h1>
+              <ul class="feature__list">
+                  <li>Give guests a private place to share and interact online.</li>
+                  <li>Have all event content, from all social channels, visible in one place.</li>
+                  <li>Strengthen your brand presence. </li>
+                  <li>Offer sponsors creative ways to reach guests directly.</li>
+                  <li>Build your community on the fly.</li>
+              </ul>
+            </article>
+          </section>
         </div>
       </div>
-    </section>
 
-    <section>
-      <article>
-        <h1>You throw a great event. We give you a great app.</h1>
-        <ul>
-            <li>Your own iOS and Android mobile apps powered </li>
-            <li>by AppMyDay’s infrastructure.</li>
-            <li>Your logo and branding fully integrated.</li>
-            <li>Unlimited events. Unlimited storage. Limited time offer!</li>
-        </ul>
-      </article>
-      <article>
-        <h1>The easiest way to get your events online</h1>
-        <ul>
-            <li>No expensive development or outsourcing required.</li>
-            <li>Ongoing maintenance and hosting.</li>
-            <li>One solution for all your events. </li>
-            <li>New, exciting features added regularly (and you get them first!).</li>
-            <li>Leveraging years of experience in engaging guests online.</li>
-            <li>Business class support. 24/7 phone availability for urgent matters.</li>
-        </ul>
-      </article>
-      <article>
-        <h1>Reach guests directly on their mobiles</h1>
-        <ul>
-            <li>Give guests a private place to share and interact online.</li>
-            <li>Have all event content, from all social channels, visible in one place.</li>
-            <li>Strengthen your brand presence. </li>
-            <li>Offer sponsors creative ways to reach guests directly.</li>
-            <li>Build your community on the fly.</li>
-        </ul>
-      </article>
-    </section>
-
-    <form>
-      <p>See a live demo:</p>
-
-      <label for="demo-name">First and last name</label>
-      <input type="text" id="demo-name" placeholder="First and Last Name">
-
-      <label for="demo-email">email</label>
-      <input type="email" id="demo-email" placeholder="Email">
-
-      <label for="demo-phone">Phone Number</label>
-      <input type="phone" id="demo-phone" placeholder="Phone Number">
-
-      <input type="submit" value="Contact Me">
-    </form>
-
-    <footer>
-      <div>
-        <a href="#">
-          <img src="images/appstore.jsp" alt="">
-        </a>
-        <a href="#">
-          <img src="images/googleplay.jsp" alt="">
-        </a>
+      <div class="section-form">
+        <div class="container container--large">
+          <form class="live-demo">
+            <div class="live-demo__wrapper live-demo__wrapper--title">
+              <div class="live-demo__group">
+                <p class="live-demo__title">See a live demo:</p>
+              </div>
+            </div><div class="live-demo__wrapper live-demo__wrapper--control">
+              <div class="live-demo__group">
+              <label class="sr-only" for="demo-name">First and last name</label>
+              <input class="form-control" type="text" id="demo-name" placeholder="First and Last Name">
+            </div>
+            </div><div class="live-demo__wrapper live-demo__wrapper--control">
+              <div class="live-demo__group">
+                <label class="sr-only" for="demo-email">email</label>
+                <input class="form-control" type="email" id="demo-email" placeholder="Email">
+              </div>
+            </div><div class="live-demo__wrapper live-demo__wrapper--control">
+              <div class="live-demo__group">
+                <label class="sr-only" for="demo-phone">Phone Number</label>
+                <input class="form-control" type="phone" id="demo-phone" placeholder="Phone Number">
+              </div>
+            </div><div class="live-demo__wrapper live-demo__wrapper--control">
+              <div class="live-demo__group">
+                <label class="sr-only" for="demo-role">Role</label>
+                <input class="form-control" type="text" id="demo-role" placeholder="Your Role">
+              </div>
+            </div><div class="live-demo__wrapper live-demo__wrapper--button">
+              <div class="live-demo__group">
+                <input class="button button-border button-border--white button--block text-uppercase" type="submit" value="Contact Me">
+              </div>
+            </div>
+          </form>          
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>
-            <a href="#">
-              <span class="icon-"></span>
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon-"></span>
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon-"></span>
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon-"></span>
-              Pinterest
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon-"></span>
-              Blog
-            </a>
-          </li>
-        </ul>
-        <ul>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">FAQ</a>
-            </li>
-            <li>
-              <a href="#">Jobs</a>
-            </li>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Terms of Use</a>
-            </li>
-        </ul>
+    </div>
+
+
+    <div class="section--mobile-buttons">
+      <a href="#">
+        <img src="images/appstore.png" alt="">
+      </a>
+      <a href="#">
+        <img src="images/googleplay.png" alt="">
+      </a>
+    </div>
+    <footer class="main-footer">
+      <div class="container container--large">
+        <div class="grid grid--middle grid--narrow">
+          <div class="grid__item medium--three-quarters">
+            <div class="grid">
+              <div class="grid__item medium--one-half">
+                <ul class="nav">
+                  <li class="nav__item">
+                    <a href="#">
+                      <span class="icon-"></span>
+                      Facebook
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">
+                      <span class="icon-"></span>
+                      Twitter
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">
+                      <span class="icon-"></span>
+                      Instagram
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">
+                      <span class="icon-"></span>
+                      Pinterest
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">
+                      <span class="icon-"></span>
+                      Blog
+                    </a>
+                  </li>
+                </ul>
+              </div><div class="grid__item medium--one-half">
+                <ul class="nav">
+                    <li class="nav__item">
+                      <a href="#">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#">FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#">Jobs</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div><div class="grid__item medium--one-quarter">
+            <div class="main-footer__mobile-icons">
+              <a href="#">
+                <img src="images/appstore.png" alt="appstore">
+              </a>
+              <a href="#">
+                <img src="images/googleplay.png" alt="google play">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -193,6 +271,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/slider.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

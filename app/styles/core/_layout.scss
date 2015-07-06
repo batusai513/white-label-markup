@@ -1,0 +1,20 @@
+.main-content{
+	@media #{$medium} {
+		display: flex;
+		flex-direction: column;
+		> :first-child{
+			order: 2;
+		}
+		> :last-child{
+			order: 1;
+		}
+	}
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	&--large{
+		max-width: em(1140);
+	}
+}

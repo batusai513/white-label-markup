@@ -1,0 +1,11 @@
+.main-footer{
+	background-color: $gray-lighter;
+	padding: em($half-spacing-unit) 0;
+
+	&__mobile-icons{
+		display: none;
+		@media #{$medium} {
+			display: block;
+		}
+	}
+}

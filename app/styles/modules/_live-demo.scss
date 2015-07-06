@@ -1,0 +1,31 @@
+.live-demo{
+	@extend %grid;
+	@extend %grid--narrow;
+	@extend %grid--middle;
+	&__wrapper{
+		@extend %grid__item;
+		@extend %large--one-sixth;
+		&--title{
+			@extend %medium--one-whole;
+		}
+		&--button{
+			@extend %medium--one-fifth;
+			@extend %small--one-whole;
+		}
+		&--control{
+			@extend %medium--one-fifth;
+			@extend %small--one-half;
+		}
+	}
+	&__group{
+		margin-bottom: $base-spacing-unit;
+		@media #{$large} {
+			margin-bottom: 0;
+		}
+	}
+	&__title{
+		margin-bottom: 0;
+		color: white;
+		font-size: em(20);
+	}
+}

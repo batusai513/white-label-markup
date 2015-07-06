@@ -1,0 +1,34 @@
+.main-header{
+  @include rem($font-size-base);
+  background-image: url('../images/hero-main-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: em(178);
+  padding: 1px 0;
+  text-align: center;
+  @media #{$medium} {
+    background-image: url('../images/hero-main.jpg');
+    height: em(360);
+    padding: em($base-spacing-unit * 1) 0;
+  }
+  @media screen and (min-width: 1180px) {
+    padding: em($base-spacing-unit * 3) 0;
+  }
+}
+
+.main-header-logo{
+  @media #{$medium} {
+    margin: 0 0 $half-spacing-unit;
+  }
+}
+
+.main-header-logo--positioned{
+  @include rem($font-size-base);
+  @media screen and (min-width: 1180px) {
+    position: absolute;
+    margin: 0;
+    left: em(45);
+    top: em(16);
+  }
+}

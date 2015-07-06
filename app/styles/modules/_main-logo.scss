@@ -1,0 +1,14 @@
+.main-logo{
+  @extend %image-replace;
+  background-image: url('../images/main-logo-small.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 107px;
+  height: 116px;
+  @media #{$medium} {
+    background-image: url('../images/main-logo.png');
+    width: 195px;
+    height: 68px;
+  }
+}

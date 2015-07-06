@@ -1,0 +1,13 @@
+@mixin workbar-theme($bg, $fg, $border-color) {
+  @extend .work-bar;
+  background-color: $bg;
+  &,
+  & a{color: $fg;}
+  .work-bar__item{
+    border-color: darken($border-color, 10%);
+    &:hover{
+      color: $color-dark-foreground;
+      text-shadow: 0 0 5px rgba($fg, 0.8);
+    }
+  }
+}

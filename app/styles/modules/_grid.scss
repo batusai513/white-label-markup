@@ -1,0 +1,47 @@
+.grid{
+  @extend %grid;
+}
+
+.grid--wide{
+  @extend %grid--wide;
+}
+
+.grid--middle{
+  @extend %grid--middle;
+}
+
+.grid--bottom{
+  @extend %grid--bottom;
+}
+
+.grid__item{
+  @extend %grid__item;
+}
+
+.medium--one-half{
+  @extend %medium--one-half;
+}
+
+.medium--one-quarter{
+  @extend %medium--one-quarter;
+}
+
+.medium--three-quarters{
+  @extend %medium--three-quarters;
+}
+
+.medium--two-thirds{
+  @extend %medium--two-thirds;
+}
+
+.medium--one-third{
+  @extend %medium--one-third;
+}
+
+
+.grid__item-content{
+	vertical-align: middle;
+	@media #{$extra-large} {
+		vertical-align: bottom;
+	}
+}

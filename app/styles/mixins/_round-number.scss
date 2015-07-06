@@ -1,0 +1,24 @@
+@mixin round-number-style($bg: #00B0AC, $color: white){
+  background-color: $bg;
+  color: $color;
+}
+@mixin round-number-size($size, $font-size){
+  @include rem($font-size);
+  width: em($size, $font-size);
+  height: em($size, $font-size);
+  line-height: em($size, $font-size);
+}
+@mixin round-number($size: 24) {
+  background-color: transparent;
+  display: inline-block;
+  margin-right: em(3);
+  width: em($size);
+  height: em($size);
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  line-height: em($size);
+}
+%round-number{
+  @include round-number();
+}

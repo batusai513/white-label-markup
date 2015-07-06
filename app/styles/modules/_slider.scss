@@ -1,0 +1,76 @@
+.slider--skin{
+  @include retina-image('../images/phone', 100% auto);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  max-width: em(283);
+  margin: auto;
+  padding: 1px;
+  position: relative;
+  @media #{$extra-large} {
+  	@include retina-image('../images/hand-with-phone', 100% auto);
+  	background-size: 100% auto;
+  	width: 682 / 960 * 100 * 1%;
+  	max-width: none;
+
+  	position: absolute;
+  	bottom: -1px;
+  	right: 0;
+  }
+}
+
+.slider--container{
+  max-width: em(248);
+  margin: 30.3886925795053% auto 37.80918727915194%;
+  @media #{$extra-large} {
+  	width: 328 / 682 * 100 * 1%;
+  	max-width: none;
+  	margin: (115 / 682 * 100 * 1%) (135 / 682 * 100 * 1%) (246 / 682 * 100 * 1%) (220 / 682 * 100 * 1%);
+  }
+}
+
+.slider-selector{
+	@include rem(14);
+	text-align: center;
+	color: #86888F;
+	width: 350px;
+	position: absolute;
+	right: 13.8%;
+	top: -40px;
+	display: none;
+	margin: auto;
+	@media #{$medium} {
+		display: block;
+	}
+	&__link{
+		color: inherit;
+		&.is-active{
+			color: black;
+			.slider-selector-icon__wrapper{
+				background-color: #e0e0e0;
+			}
+		}
+	}
+	&-icon{
+		@extend %image-replace;
+		background-repeat: no-repeat;
+		display: block;
+		width: 90px;
+		height: 89px;
+		border-radius: 25px;
+		&--blendex{
+			background-image: url('../images/icon-blendex.jpg')
+		}
+		&--alienware{
+			background-image: url('../images/icon-alienware.jpg')
+		}
+		&--amdocs{
+			background-image: url('../images/icon-amdocs.jpg')
+		}
+		&__wrapper{
+			display: block;
+			padding: 12px;
+			border-radius: 30px;
+			margin-bottom: $half-spacing-unit;
+		}
+	}
+}

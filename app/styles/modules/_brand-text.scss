@@ -1,0 +1,41 @@
+.brand-text__title,
+.brand-text__subtitle{
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.brand-text__title{
+  font-size: em(29);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.brand-text__subtitle{
+  font-size: em(25);
+}
+
+.brand-text-header__title,
+.brand-text-header__subtitle{
+  display: none;
+  @media #{$medium} {
+    display: inherit;
+  }
+}
+
+.brand-text-header__title{
+  font-size: em(60);
+  line-height: 1.25;
+  margin-bottom: em($half-spacing-unit, 60);
+}
+
+.brand-text-header__subtitle{
+  font-size: em(26);
+}
+
+.brand-text-subheader__title,
+.brand-text-subheader__subtitle{
+  @media #{$medium} {
+    display: none;
+  }
+}

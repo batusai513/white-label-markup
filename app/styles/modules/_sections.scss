@@ -1,0 +1,34 @@
+.section-slider{
+  background-color: $color-brand;
+  height: em(750);
+  padding: em($base-spacing-unit * 3) 0;
+  transition: background-color 0.15s ease-out;
+  @media #{$medium} {
+    background-color: white;
+    padding-bottom: 0;
+  }
+}
+
+.section-wording{
+  padding: em($base-spacing-unit * 8) em($half-spacing-unit) em($base-spacing-unit * 3.5);
+  @media #{$medium} {
+    max-width: em(580);
+    padding-top: em($base-spacing-unit * 4);
+  }
+}
+
+.section-form{
+	background-color: $color-brand;
+	padding: em($base-spacing-unit) em($half-spacing-unit);
+	@media #{$large} {
+		padding: em($base-spacing-unit * 2) em($half-spacing-unit);
+	}
+}
+
+.section--mobile-buttons{
+  text-align: center;
+  padding: em(40) 0;
+  @media #{$medium} {
+    display: none;
+  }
+}

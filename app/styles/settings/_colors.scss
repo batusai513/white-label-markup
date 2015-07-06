@@ -1,0 +1,31 @@
+// DESCRIPTIVE COLOR VARIABLES
+$white                              : #FFFFFF; // Backgrounds, Text
+
+// Colors
+$gray-darker:                      	lighten(#000, 13.5%); // #222
+$gray-dark:                        	lighten(#000, 20%);   // #333
+$gray:                             	#666666;
+$gray-light:                       	lighten(#000, 60%);   // #999
+$gray-lighter:                    	#f3f3f3;
+
+$brand-ui:                        	#DFDFDF;
+
+$color-foreground:                 	$gray;
+
+$brand-primary:                    	#2196f3;
+$brand-success:                    	#0A744F;
+$brand-info:                       	#00A5FF;
+$brand-warning:                    	orange;
+$brand-danger:                     	#D42036;
+$brand-default:                    	#6C818B;
+
+
+// FUNCTIONAL COLOR VARIABLES
+$color-text-link                    : $brand-info;
+$color-text-body                    : black;
+$headings-color:                    black;
+$color-brand:                      	$brand-primary;
+$body-bg:                          	white;
+$link-color:                       	#0E597C;
+$link-hover-color:                 	darken($link-color, 15%);
+$hr-border:                        	$gray-lighter;
