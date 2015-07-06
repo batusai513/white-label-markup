@@ -151,7 +151,7 @@ $screen-extra-large:              1280px!default;
 $screen:                          "only screen";
 $small:                           "only screen and (min-width: #{$screen-extra-small})";
 $small:                           "only screen and (min-width: #{$screen-small})";
-$medium:                          "only screen and (min-width: #{$screen-medium + 1})";
+$medium:                          "only screen and (min-width: #{$screen-medium})";
 $large-max:                       "only screen and (max-width: #{$screen-large - 1})";
 $small-max:                       "only screen and (max-width: #{$screen-small - 1})";
 $medium-max:                      "only screen and (max-width: #{$screen-medium - 1})";
@@ -161,10 +161,10 @@ $landscape:                       "only screen and (orientation: landscape)";
 $portrait:                        "only screen and (orientation: portrait)";
 
 
-$use-silent-classes:				true!default;
-$gutter:							20px!default;
-$push:								false!default;
-$pull:								false!default;
+$use-silent-classes:				  true!default;
+$gutter:                      20px!default;
+$push:								        false!default;
+$pull:								        false!default;
 
 $breakpoints: (
     'large' '(min-width: #{$screen-large})',

@@ -40,7 +40,7 @@
 
 
 .grid__item-content{
-	vertical-align: middle;
+	vertical-align: top;
 	@media #{$extra-large} {
 		vertical-align: bottom;
 	}

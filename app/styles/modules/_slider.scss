@@ -10,7 +10,7 @@
   	@include retina-image('../images/hand-with-phone', 100% auto);
   	background-size: 100% auto;
   	width: 682 / 960 * 100 * 1%;
-  	max-width: none;
+  	max-width: 938px;
 
   	position: absolute;
   	bottom: -1px;
@@ -33,13 +33,16 @@
 	text-align: center;
 	color: #86888F;
 	width: 350px;
-	position: absolute;
-	right: 13.8%;
-	top: -40px;
 	display: none;
 	margin: auto;
-	@media #{$medium} {
-		display: block;
+  @media #{$medium} {
+    display: block;
+    margin-bottom: $base-spacing-unit;
+  }
+	@media #{$extra-large} {
+    position: absolute;
+    right: 11.5%;
+    top: -45%;
 	}
 	&__link{
 		color: inherit;
