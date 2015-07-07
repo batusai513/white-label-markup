@@ -13,7 +13,7 @@
   	@include retina-image('../images/hand-with-phone', 100% auto);
   	background-size: 100% auto;
   	width: 682 / 960 * 100 * 1%;
-  	max-width: 938px;
+  	max-width: 600px;
 
   	position: absolute;
   	bottom: 0;
@@ -50,7 +50,7 @@
 	}
 	@media #{$extra-large} {
 		float: $end;
-    	margin-right: 11.5%;
+    	margin-right: 75px;
 	}
 	&__link{
 		color: inherit;

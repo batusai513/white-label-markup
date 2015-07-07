@@ -22,7 +22,16 @@
 
 .feature__title{
 	margin-top: 0;
-	font-size: em(30);
+		font-size: em(30);
+		margin-bottom: $base-spacing-unit;
+	@media screen and (min-width: $screen-extra-large) and (max-width: 1420px){
+		font-size: em(20);
+		margin-bottom: $half-spacing-unit;
+	}
+	@media screen and (min-width: 1420px) and (max-width: 1520px) {
+		font-size: em(25);
+		margin-bottom: $half-spacing-unit;
+	}
 }
 
 .feature__list{
@@ -37,6 +46,9 @@
 		font-weight: 400;
 	}
 	> li{
+		@media screen and (min-width: $screen-extra-large) and (max-width: 1520px) {
+			font-size: em(14);
+		}
 		@media #{$medium} {
 			&:before{
 				content: '●';
