@@ -5,10 +5,6 @@
 @import "settings/variables";
 @import "core/functions";
 
-// bower:scss
-@import "bower_components/csswizardry-grids/csswizardry-grids";
-// endbower
-
 @import "mixins/box-sizing";
 @import "mixins/box-shadow";
 @import "mixins/hidpi";
@@ -28,6 +24,7 @@
 @import "core/fonts";
 @import "core/font-icons";
 @import "core/core";
+@import "core/grid";
 @import "core/layout";
 @import "core/typography";
 

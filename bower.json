@@ -2,10 +2,11 @@
   "name": "white-label",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
+    "jquery": "~1.11.3",
     "modernizr": "~2.8.1",
     "slick.js": "~1.5.5",
-    "csswizardry-grids": "~2.2.0"
+    "csswizardry-grids": "~2.2.0",
+    "respond": "~1.4.2"
   },
   "devDependencies": {
     "chai": "~3.0.0",
