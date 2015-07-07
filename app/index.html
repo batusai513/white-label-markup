@@ -51,9 +51,9 @@
       <p class="brand-text__subtitle brand-text-header__subtitle">No coding. No hassle.</p>
     </header>
     <div class="main-content">
-      <div class="grid">
+      <div class="grid main-content--grid">
         <div class="grid__item grid__item-content medium--one-half position-relative">
-          <section class="section-slider">
+          <section class="section-slider js-slider-container">
             <h1 class="brand-text__title brand-text-subheader__title">Your own branded <br> social events app</h1>
             <p class="brand-text__subtitle brand-text-subheader__subtitle">No coding. No hassle.</p>
 
@@ -99,7 +99,7 @@
               </div>
             </div>
           </section>
-        </div><div class="grid__item grid__item-content medium--one-half">
+        </div><div class="grid__item grid__item-content medium--one-half js-text-container">
           <section class="section-wording">
             <article class="feature feature--first">
               <h1 class="beta feature__title">You throw a great event. <br> We give you a great app.</h1>
@@ -184,62 +184,62 @@
     <footer class="main-footer">
       <div class="container container--large">
         <div class="grid grid--middle grid--narrow">
-          <div class="grid__item medium--three-quarters">
+          <div class="grid__item large--three-quarters medium--two-thirds">
             <div class="grid">
-              <div class="grid__item medium--one-half">
-                <ul class="nav">
-                  <li class="nav__item">
+              <div class="grid__item large--one-half">
+                <ul class="nav footer-nav social-nav">
+                  <li class="nav__item social-nav__item">
                     <a href="#">
-                      <span class="icon-"></span>
-                      Facebook
+                      <span class="social-nav__icon icon-facebook"></span>
+                      <span class="social-nav__text">Facebook</span>
                     </a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item social-nav__item">
                     <a href="#">
-                      <span class="icon-"></span>
-                      Twitter
+                      <span class="social-nav__icon icon-twitter"></span>
+                      <span class="social-nav__text">Twitter</span>
                     </a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item social-nav__item">
                     <a href="#">
-                      <span class="icon-"></span>
-                      Instagram
+                      <span class="social-nav__icon icon-instagram"></span>
+                      <span class="social-nav__text">Instagram</span>
                     </a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item social-nav__item">
                     <a href="#">
-                      <span class="icon-"></span>
-                      Pinterest
+                      <span class="social-nav__icon icon-pinterest"></span>
+                      <span class="social-nav__text">Pinterest</span>
                     </a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item social-nav__item">
                     <a href="#">
-                      <span class="icon-"></span>
-                      Blog
+                      <span class="social-nav__icon icon-pencil"></span>
+                      <span class="social-nav__text">Blog</span>
                     </a>
                   </li>
                 </ul>
-              </div><div class="grid__item medium--one-half">
-                <ul class="nav">
-                    <li class="nav__item">
-                      <a href="#">Contact</a>
-                    </li>
-                    <li class="nav__item">
-                      <a href="#">FAQ</a>
-                    </li>
-                    <li class="nav__item">
-                      <a href="#">Jobs</a>
-                    </li>
-                    <li class="nav__item">
-                      <a href="#">Privacy Policy</a>
-                    </li>
-                    <li class="nav__item">
-                      <a href="#">Terms of Use</a>
-                    </li>
+              </div><div class="grid__item large--one-half">
+                <ul class="nav nav--dots footer-nav">
+                  <li class="nav__item">
+                    <a href="#">Contact</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">Jobs</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">Terms of Use</a>
+                  </li>
                 </ul>
               </div>
             </div>
-          </div><div class="grid__item medium--one-quarter">
+          </div><div class="grid__item large--one-quarter medium--one-third main-footer__mobile-icons">
             <div class="main-footer__mobile-icons">
               <a href="#">
                 <img src="images/appstore.png" alt="appstore">
@@ -271,6 +271,9 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/mobile-test.js"></script>
+    <script src="scripts/debounced-resize.js"></script>
+    <script src="scripts/main-container-height.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

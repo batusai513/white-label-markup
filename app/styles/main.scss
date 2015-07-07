@@ -25,6 +25,8 @@
 @import "mixins/forms";
 
 @import "core/normalize";
+@import "core/fonts";
+@import "core/font-icons";
 @import "core/core";
 @import "core/layout";
 @import "core/typography";
@@ -46,7 +48,3 @@
 @import "modules/slider";
 
 @import "helpers/helpers";
-
-.slick-dots{
-  bottom: -30%;
-}

@@ -2,10 +2,13 @@
   @include retina-image('../images/phone', 100% auto);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  max-width: em(283);
+  max-width: em(183);
   margin: auto;
   padding: 1px;
   position: relative;
+  @media #{$medium} {
+  	max-width: em(283);
+  }
   @media #{$extra-large} {
   	@include retina-image('../images/hand-with-phone', 100% auto);
   	background-size: 100% auto;
@@ -19,8 +22,14 @@
 }
 
 .slider--container{
-  max-width: em(248);
-  margin: 30.3886925795053% auto 37.80918727915194%;
+	max-width: em(160);
+	margin: 30.3886925795053% 
+			auto 
+			37.80918727915194%;
+  @media #{$medium} {
+	  max-width: em(248);
+	  margin: 30.3886925795053% auto 37.80918727915194%;
+  }
   @media #{$extra-large} {
   	width: 328 / 682 * 100 * 1%;
   	max-width: none;
@@ -35,14 +44,13 @@
 	width: 350px;
 	display: none;
 	margin: auto;
-  @media #{$medium} {
-    display: block;
-    margin-bottom: $base-spacing-unit;
-  }
+	@media #{$medium} {
+		display: block;
+		margin-bottom: $base-spacing-unit;
+	}
 	@media #{$extra-large} {
-    position: absolute;
-    right: 11.5%;
-    top: -45%;
+		float: $end;
+    	margin-right: 11.5%;
 	}
 	&__link{
 		color: inherit;
@@ -75,5 +83,49 @@
 			border-radius: 30px;
 			margin-bottom: $half-spacing-unit;
 		}
+	}
+}
+
+
+.slick-dots{
+  bottom: -33%;
+}
+
+.slick-dots li{
+	margin: 0 2px;
+}
+
+.slick-dots li button:before{
+	font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $color-brand;
+}
+
+.slick-prev, .slick-next{
+	width: auto;
+	height: auto;
+}
+
+.slick-prev:before, .slick-next:before{
+	font-family: 'wlabel';
+	font-size: 80px;
+	@media #{$medium} {
+		color: #767676;	
+	}
+}
+
+.slick-next{
+	right: -90px;
+	&:before{
+		content: "\e603";
+	}
+}
+
+.slick-prev{
+	left: -90px;
+	&:before{
+		content: "\e602";
 	}
 }

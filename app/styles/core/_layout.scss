@@ -14,6 +14,8 @@
 .container{
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: em($half-spacing-unit);
+	padding-right: em($half-spacing-unit);
 	&--large{
 		max-width: em(1140);
 	}

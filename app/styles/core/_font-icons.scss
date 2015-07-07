@@ -1,0 +1,43 @@
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'wlabel';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e600";
+}
+.icon-asterisk:before {
+	content: "\e601";
+}
+.icon-chevron-thin-left:before {
+	content: "\e602";
+}
+.icon-chevron-thin-right:before {
+	content: "\e603";
+}
+.icon-pencil:before {
+	content: "\e604";
+}
+.icon-instagram:before {
+	content: "\e605";
+}
+.icon-pinterest:before {
+	content: "\e606";
+}
+.icon-twitter:before {
+	content: "\e607";
+}
+
+.icon--fixed{
+	width: em(20);
+	margin-left: em(5);
+}

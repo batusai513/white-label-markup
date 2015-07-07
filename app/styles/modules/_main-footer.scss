@@ -1,6 +1,6 @@
 .main-footer{
 	background-color: #90999e;
-	padding: em($half-spacing-unit) 0;
+	padding: em($half-spacing-unit * 2) 0;
   &,
   & a{
     color: white;
@@ -8,7 +8,50 @@
 	&__mobile-icons{
 		display: none;
 		@media #{$medium} {
-			display: block;
+			display: inline-block;
+		}
+	}
+	@media #{$medium} {
+		padding: em($base-spacing-unit) 0;
+	}
+}
+
+.footer-nav{
+	@include rem(14);
+	text-align: center;
+	@media #{$large} {
+		text-align: left;
+		margin-bottom: 0;
+	}
+}
+
+.social-nav{
+	&__item{
+		margin: 0 em(10);
+		@media #{$medium} {
+			margin-right: em(5);
+			margin-left: 0;
+			&:last-child{margin-right: 0;}
+		}
+	}
+	&__icon{
+		font-size: em(35);
+		@media #{$medium} {
+			font-size: inherit;
+			width: em(15);
+			display: inline-block;	
+		}
+	}
+	&__text{
+		@media #{$medium-max} {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			margin: -1px;
+			padding: 0;
+			overflow: hidden;
+			clip: rect(0,0,0,0);
+			border: 0 ;
 		}
 	}
 }

@@ -38,6 +38,18 @@
   @extend %medium--one-third;
 }
 
+.large--one-quarter{
+  @extend %large--one-quarter;
+}
+
+.large--three-quarters{
+  @extend %large--three-quarters;
+}
+
+.large--one-half{
+	@extend %large--one-half;
+}
+
 
 .grid__item-content{
 	vertical-align: top;

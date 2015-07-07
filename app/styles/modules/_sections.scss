@@ -1,7 +1,7 @@
 .section-slider{
   background-color: $color-brand;
-  height: em(750);
-  padding: em($base-spacing-unit * 3) 0;
+  height: em(500);
+  padding: em($base-spacing-unit * 2) em($half-spacing-unit);
   transition: background-color 0.15s ease-out;
   @media #{$medium} {
     background-color: white;
@@ -10,18 +10,18 @@
 }
 
 .section-wording{
-  padding: em($base-spacing-unit * 8) em($half-spacing-unit) em($base-spacing-unit * 3.5);
+  padding: em($base-spacing-unit * 6) em($half-spacing-unit) em($base-spacing-unit * 2);
   @media #{$medium} {
     max-width: em(580);
-    padding-top: em($base-spacing-unit * 4);
+    padding-top: em($base-spacing-unit * 3);
   }
 }
 
 .section-form{
 	background-color: $color-brand;
-	padding: em($base-spacing-unit) em($half-spacing-unit);
+	padding: em($base-spacing-unit) 0;
 	@media #{$large} {
-		padding: em($base-spacing-unit * 2) em($half-spacing-unit);
+		padding: em(52) em($half-spacing-unit);
 	}
 }
 
@@ -30,5 +30,13 @@
   padding: em(40) 0;
   @media #{$medium} {
     display: none;
+  }
+}
+
+.main-content--grid{
+  @media #{$medium} {
+    .flexbox &{
+      display: flex;
+    } 
   }
 }

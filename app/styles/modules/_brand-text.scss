@@ -6,13 +6,13 @@
 }
 
 .brand-text__title{
-  font-size: em(29);
+  font-size: em(25);
   font-weight: 700;
   margin-top: 0;
 }
 
 .brand-text__subtitle{
-  font-size: em(25);
+  font-size: em(20);
 }
 
 .brand-text-header__title,
@@ -38,4 +38,8 @@
   @media #{$medium} {
     display: none;
   }
+}
+
+.brand-text-subheader__subtitle{
+  margin-bottom: em($base-spacing-unit * 2, 25);
 }
