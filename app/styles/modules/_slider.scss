@@ -50,7 +50,13 @@
 	}
 	@media #{$extra-large} {
 		float: $end;
-    	margin-right: 75px;
+		margin-right: 45px;
+	}
+	@media #{$extra-large} {
+		margin-right: 35px;
+	}
+	@media screen and (min-width: 1490px) {
+    	margin-right: 80px;
 	}
 	&__link{
 		color: inherit;

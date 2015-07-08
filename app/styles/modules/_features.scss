@@ -12,10 +12,16 @@
 		}
 	}
 	&--first,
+	&--second,
 	&--third{
 		display: none;
 		@media #{$medium} {
 			display: block;
+		}
+	}
+	&--mobile{
+		@media #{$medium} {
+			display: none;
 		}
 	}
 }

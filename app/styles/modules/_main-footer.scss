@@ -1,6 +1,7 @@
 .main-footer{
+	@include rem(14);
 	background-color: #90999e;
-	padding: em($half-spacing-unit * 2) 0;
+	padding: em($half-spacing-unit * 2, 14) 0;
   &,
   & a{
     color: white;
