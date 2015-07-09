@@ -17,6 +17,19 @@
 			@extend %small--one-half;
 		}
 	}
+	&__input-wrapper{
+		position: relative;
+		&:before{
+			content: '*';
+			position: absolute;
+			left: em(5);
+			top: $input-height-base /3;
+			color: $color-brand;
+		}
+		.form-control{
+			padding-left: em(20);
+		}
+	}
 	&__group{
 		margin-bottom: $base-spacing-unit;
 		@media #{$large} {

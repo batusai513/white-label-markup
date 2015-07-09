@@ -2,6 +2,7 @@
 	@include rem(14);
 	background-color: #90999e;
 	padding: em($half-spacing-unit * 2, 14) 0;
+	text-align: center;
   &,
   & a{
     color: white;
@@ -14,6 +15,7 @@
 	}
 	@media #{$medium} {
 		padding: em($base-spacing-unit) 0;
+		//text-align: left;
 	}
 }
 
